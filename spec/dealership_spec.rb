@@ -92,7 +92,7 @@ RSpec.describe Dealership do
     dealership.add_car(car_4)
     
     expect(dealership.total_value).to eq(156000)
-    expect(dealership.details).to eq(dealership.details)
+    expect(dealership.details).to eq({:total_value=>156000, :address=>"123 Main Street"})
   end
 
 end

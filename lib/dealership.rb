@@ -34,8 +34,11 @@ class Dealership
   end
   
   def details
-    p self.total_value 
-    p self.address
+    hash = {
+      total_value: self.total_value,
+      address: self.address
+    }
+    return hash
   end
   
 end
