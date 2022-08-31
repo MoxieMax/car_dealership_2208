@@ -1,3 +1,8 @@
+#Started at 10:20am, 31 August
+#Break from 11:10am until 11:35am
+#stopped at 11:55am for class
+#finished Iteration 3 at 12:30pm
+
 # Car Dealership
 
 ## Instructions
