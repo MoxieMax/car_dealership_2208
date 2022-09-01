@@ -3,6 +3,11 @@
 #stopped at 11:55am for class
 #finished Iteration 3 at 12:30pm
 
+#Iteration 4 started ~4:15pm
+#break 4:55pm - 9:45pm
+
+#Iteration 4 finished 11:03pm
+
 # Car Dealership
 
 ## Instructions

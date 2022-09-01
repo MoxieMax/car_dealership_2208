@@ -16,7 +16,6 @@ class Dealership
       return true
     else false
     end
-    
   end
   
   def cars_by_make(make)
@@ -28,9 +27,7 @@ class Dealership
     @inventory.each do |car|
       sum_cars += car.total_cost
     end
-    
     return sum_cars
-    
   end
   
   def details
@@ -39,6 +36,26 @@ class Dealership
       address: self.address
     }
     return hash
+  end
+  
+  def average_price_of_car
+    self.inventory.sum do |car|
+       car.total_cost / self.inventory.count
+    end
+  end
+  def cars_sorted_by_price
+    inventory.sort_by {|car| car.total_cost}
+  end
+  
+  def inventory_hash
+    hash = {}
+    self.inventory.each do |car|
+      if !hash.has_key?(car.make)
+        hash[car.make] = [car]
+      else hash[car.make] << car
+      end
+    end
+    hash
   end
   
 end
